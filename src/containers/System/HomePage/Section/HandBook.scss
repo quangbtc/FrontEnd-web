@@ -1,0 +1,15 @@
+.section-container-hand-book {
+  background-color: var(--nen-trang);
+  .section-hand-book {
+    display: flex !important;
+    .section-hand-book-img {
+      width: auto !important;
+      height: 156px;
+      margin-right: 15px;
+    }
+    .section-hand-book-title {
+      font-size: 18px !important;
+      font-weight: bolder !important;
+    }
+  }
+}

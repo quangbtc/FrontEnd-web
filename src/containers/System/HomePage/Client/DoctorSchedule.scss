@@ -1,0 +1,61 @@
+.select-schedule {
+  text-align: left;
+  .select-schedule-form {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #64c9d6;
+    padding: 5px 10px;
+    margin: 10px 15px;
+    min-width: 134px;
+    color: blue;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+.schedule-table {
+  .schedule-calendar {
+    .text-calendar {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #2d9ff2;
+    }
+    span i {
+      margin-right: 10px;
+      font-size: 18px;
+      color: #78abec;
+    }
+  }
+  .schedule-doctor-wrapper {
+    .schedule-doctor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: baseline;
+      min-height: 80px;
+      .btn {
+        outline: none;
+        min-width: 137px;
+        background-color: #ece40c33;
+        margin: 15px 10px;
+        color: blue;
+        &:hover {
+          color: white !important;
+          background-color: orange !important;
+        }
+      }
+    }
+    .text-notification {
+      color: red;
+      font-style: italic;
+    }
+    .book-free {
+      font-weight: 300;
+      i {
+        color: #7575e8;
+        font-size: 16px;
+      }
+    }
+  }
+}

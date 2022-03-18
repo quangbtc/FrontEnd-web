@@ -1,0 +1,82 @@
+.container-right-info {
+  padding-left: 15px;
+  border-left: 1px solid #c8c8c8;
+  margin-top: 76px;
+  .container-info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    .container-info-title {
+      font-size: 17px;
+      color: #666;
+    }
+    .container-info-name {
+      color: #000;
+      font-weight: bolder;
+    }
+    .container-info-address {
+      font-weight: 300;
+    }
+  }
+  .container-info-price {
+    .info-price-title {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .info-price-title__text {
+        font-size: 17px;
+        color: #666;
+      }
+      .checking-price {
+        padding: 10px 10px;
+        font-weight: 300;
+      }
+      .view-detail {
+        color: #60bcbc;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    .info-price-detail {
+      background-color: #e9e4e4;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: 1px solid #ddd;
+      padding-left: 5px;
+      .info-price-detail__title {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+        .info-price-title__text {
+          font-size: 16px;
+          font-weight: 600;
+          color: #423131;
+        }
+        .checking-price {
+          font-size: 16px;
+          font-weight: 300;
+          padding: 0px 10px;
+        }
+      }
+      .info-price-detail__content {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+    .info-payment {
+      background-color: #d0cfcf;
+      border: 1px solid #ddd;
+      padding: 10px 5px;
+    }
+    .btn-hidden-price {
+      display: inline-block;
+      padding: 5px 0px;
+      color: #60bcbc;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "homeHeader": {
+    "specialty": "Medical specialty",
+    "searchDoctor": "Find a doctor by specialty",
+    "healthFacility": "Health facilities",
+    "chooseHospital": "Choose hospital and clinic",
+    "doctor": "Doctor",
+    "chooseDoctor": "Choose a good doctor",
+    "examinationPackage": "Examination package",
+    "generalExamination": "General health check",
+    "support": "Support",
+    "welcome": "Welcome ,"
+  },
+  "headerBanner": {
+    "medicalBackground": "MEDICAL PLATFORM",
+    "healthCare": "COMPREHENSIVE HEALTH CARE",
+    "findSpecialty": "Find specialty",
+    "specialtyExamination": "Specialized examination",
+    "remoteExamination": "Remote examination",
+    "generalExamination": "General examination",
+    "medicalTest": "Medical test",
+    "healthyMind": "Healthy mind",
+    "dentalExamination": "Dental examination",
+    "surgeryPackage": "Surgery Package",
+    "medicalProduct": "Medical product"
+  },
+  "user-redux": {
+    "add-new": "Add new user",
+    "email": "Email",
+    "password": "Password",
+    "address": "Address",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phone-number": "Phone number",
+    "gender": "Gender",
+    "role": "Role",
+    "position": "Position",
+    "image": "Add image",
+    "placeholder-password": "Enter password",
+    "placeholder-email": "Enter email",
+    "placeholder-firstName": "Enter first name ",
+    "placeholder-lastName": "Enter last name",
+    "placeholder-address": "Enter address",
+    "placeholder-phoneNumber": "Enter phone number",
+    "placeholder-file": "Choose image",
+    "submit": "Save user",
+    "save-change": "Save changes"
+  },
+  "homePage": {
+    "outstanding-doctor": "Outstanding Doctor of the Week",
+    "more-info": "More.."
+  },
+  "common": {
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "decentralize": "Decentralize",
+    "close": "Close",
+    "save": "Save",
+    "refresh": "Refresh",
+    "accept": "Accept",
+    "confirm": "Confirm",
+    "confirm-this-task": "Are you sure to process this task?",
+    "fail-to-load-data": "Fail to load data",
+    "unknown-error": "There was an error",
+    "internal-server-error": "Internal server error",
+    "bad-request": "Bad request",
+    "forbiden-request": "Invalid input data",
+    "fail-to-load-all-code": "Fail to load data from allcode",
+    "sum": "Sum",
+    "date-range-invalid": "Date range invalid"
+  },
+  "login": {
+    "login": "Login",
+    "username": "Username",
+    "password": "Password",
+    "userpass-wrong": "Invalid username or password!"
+  },
+  "menu": {
+    "system": {
+      "header": "System",
+      "system-administrator": {
+        "header": "System Administrator",
+        "user-manage": "User manage",
+        "user-redux": "Manage user redux",
+        "register-package-group-or-account": "Register service package for group/account"
+      },
+      "system-parameter": {
+        "header": "System-parameter"
+      }
+    },
+    "admin": {
+      "manage-user": "Users",
+      "manage-admin": "Manage admin",
+      "manage-doctor": "Manage doctor",
+      "crud": "List User",
+      "crud-redux": "List user Redux",
+      "clinics": "Clinics",
+      "manage-clinics": "Manage clinics",
+      "specialty": "Specialty",
+      "manage-specialty": "Manage specialty",
+      "handbook": "Handbook",
+      "manage-handbook": "Manage handbook",
+      "schedule-doctor": "Manage Schedule Doctor"
+    },
+    "doctor": {
+      "user-doctor": "User doctor",
+      "manage-schedule": "Manage doctor's schedule"
+    }
+  },
+  "patient": {
+    "schedule-doctor": {
+      "calendar": "Calendar",
+      "no-schedule": "Doctor don't have schedule on this day. Pls try other day.",
+      "book": "Choose ",
+      "book-free": " and order (Free)"
+    }
+  }
+}

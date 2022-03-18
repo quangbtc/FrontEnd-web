@@ -1,0 +1,97 @@
+.home__header__container {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 20;
+  .home__header__content {
+    display: flex;
+    padding: 0px 140px;
+    height: 77px;
+    .home__header__content-left {
+      width: 25%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      .home__header-icon {
+        font-size: 25px;
+        color: grey;
+        margin-right: 15px;
+        cursor: pointer;
+      }
+      .home__header-logo {
+        background: url(../../../../assets/images/bookingcare-2020.svg) center
+          center no-repeat;
+        height: 36px;
+        width: 160px;
+      }
+    }
+    .home__header__content-middle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+      .header__option {
+        .header__option-title {
+          font-weight: 600;
+          font-size: 15px;
+          cursor: pointer;
+
+          &:hover {
+            color: grey;
+            filter: brightness(0.9);
+          }
+        }
+        .header__option-sub-title {
+          font-weight: 400;
+          font-size: 12px;
+        }
+      }
+    }
+    .home__header__content-right {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .home__header-support {
+        .home__header-support-icon {
+          display: flex;
+          margin-right: 20px;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.8;
+          }
+          i {
+            margin-right: 5px;
+            color: #52c3d2;
+            font-size: 20px;
+          }
+        }
+      }
+      .home__header-lang {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .home__header-lang-vi,
+        .home__header-lang-en {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          line-height: 25px;
+          text-align: center;
+          border-radius: 50%;
+          margin-right: 10px;
+          cursor: pointer;
+          opacity: 0.5;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+        .active {
+          opacity: 1;
+          background-color: red;
+          color: white;
+        }
+      }
+    }
+  }
+}

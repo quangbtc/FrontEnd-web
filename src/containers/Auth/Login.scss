@@ -1,0 +1,78 @@
+.bg-login {
+  background: linear-gradient(
+    -135deg,
+    rgba(234, 88, 249, 1),
+    rgba(90, 212, 224, 1)
+  );
+  height: 100vh;
+  .container-login {
+    margin: auto;
+    width: 350px;
+    background-color: white;
+    height: 500px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    padding: 20px;
+    .btn-login {
+      background: linear-gradient(-135deg, #ea58f9, #5ad4e0);
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 25px;
+      color: white;
+    }
+    .social-login {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      .facebook-login {
+        width: 40px;
+        height: 40px;
+        background-color: #466bb5;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .google-login {
+        width: 40px;
+        height: 40px;
+        background-color: #e44539;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        cursor: pointer;
+      }
+    }
+    .sigup {
+      text-align: center;
+      margin-top: 30px;
+      a {
+        text-decoration: none;
+      }
+    }
+    .input-style {
+      font-size: 20px;
+    }
+    .password-input {
+      position: relative;
+      .icon-showHide i {
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}

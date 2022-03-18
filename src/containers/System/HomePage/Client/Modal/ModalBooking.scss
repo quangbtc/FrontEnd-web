@@ -1,0 +1,43 @@
+.modal-container {
+  .modal-header {
+    .header-title {
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    .header-closeIcon {
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  .modal-body {
+  }
+  .modal-footer {
+    .btn-confirm {
+      color: white;
+      background-color: #4ccc4c;
+      border: none;
+      border-radius: 3px;
+      outline: none;
+      cursor: pointer;
+      padding: 5px 10px;
+      font-size: 16px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .btn-cancel {
+      color: white;
+      background-color: #f30a58;
+      border: none;
+      border-radius: 3px;
+      outline: none;
+      cursor: pointer;
+      padding: 5px 10px;
+      font-size: 16px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

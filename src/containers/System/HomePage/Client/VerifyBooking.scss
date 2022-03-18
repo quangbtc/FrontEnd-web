@@ -1,0 +1,20 @@
+.verify-booking-container {
+  .is-loading {
+    text-align: center;
+    margin-top: 70px;
+    color: rgb(0, 153, 255);
+    font-size: 20px;
+  }
+  .info-booking-success {
+    text-align: center;
+    margin-top: 70px;
+    color: rgb(30, 255, 0);
+    font-size: 20px;
+  }
+  .info-booking-failed {
+    text-align: center;
+    margin-top: 70px;
+    color: red;
+    font-size: 20px;
+  }
+}

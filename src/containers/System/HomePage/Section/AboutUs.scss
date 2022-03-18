@@ -1,0 +1,25 @@
+.section-container-about-us {
+  background-color: var(--nen-xam);
+  .section-content-about-us {
+    height: auto !important;
+    .section-body-about-us {
+      height: 320px !important;
+      display: flex;
+      .section-about-us-video {
+        height: inherit;
+        padding: 20px 0px;
+      }
+      .section-about-us-social {
+        padding: 20px 15px;
+        .section-about-us-text {
+          text-indent: 20px;
+          &::first-letter {
+            font-size: 25px;
+            font-weight: 600;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}

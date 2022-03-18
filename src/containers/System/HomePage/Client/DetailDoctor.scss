@@ -1,0 +1,45 @@
+.image-detail {
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-color: aqua;
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  display: inline-block;
+}
+.doctor-breakcum {
+  .breakcum-home-icon {
+    margin-right: 15px;
+    color: #588484;
+    font-size: 18px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  .breakcum-level {
+    margin: 0px 5px;
+    color: #047c7c;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.social-icon {
+  .btn {
+    line-height: 20px;
+    height: 20px;
+  }
+}
+.doctor-info-detail {
+  background-color: #f9f9f9;
+  border-top: 1px solid #333;
+  padding: 10px 15px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

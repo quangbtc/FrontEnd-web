@@ -1,0 +1,21 @@
+.profile-doctor-container {
+  display: flex;
+  margin: 10px auto;
+  .avatar-container {
+    flex: 30%;
+    border: 50%;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    min-height: 135px;
+    max-width: 135px;
+  }
+  .info-container {
+    .doctor-title {
+    }
+    .doctor-description {
+    }
+  }
+}

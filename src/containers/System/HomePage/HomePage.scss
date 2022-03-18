@@ -1,0 +1,127 @@
+:root {
+  --nen-xam: #f9f9f9;
+  --nen-trang: #fff;
+  --nen-am: #fcfaf6;
+  --mau-bc-16: #45c3d2;
+  --mau-sam: #333;
+  --mau-chu-dieuhuong: #fff;
+  --nen-dieuhuong: var(--mau-bc-16);
+  --chieucao-dieuhuong: 60px;
+  --mau-duongke: #eee;
+}
+.slick-slider {
+  height: 100%;
+}
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 42%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  outline: none;
+  background-color: #e4e4f0;
+  right: 0px;
+}
+.slick-prev {
+  left: -10px;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 42%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  outline: none;
+  background-color: #e4e4f0;
+  z-index: 10;
+}
+.slick-prev:before {
+  content: "←";
+  color: #baaaab;
+  &:hover {
+    color: #baaaab;
+    opacity: 1;
+  }
+}
+.slick-next:before {
+  content: "→";
+  color: #baaaab;
+  &:hover {
+    color: #baaaab;
+    opacity: 1;
+  }
+}
+.slick-disabled {
+  display: none !important;
+}
+
+//CONTENT
+.section-container {
+  border-top: 1px solid var(--mau-duongke);
+  border-bottom: 1px solid var(--mau-duongke);
+  .section-content {
+    height: 326px;
+    align-items: center;
+    margin: 0px 132px;
+
+    .section-header {
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      .section-header-title {
+        font-size: 25px;
+      }
+      button {
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        background-color: var(--mau-duongke);
+        outline: none;
+        border: none;
+        padding: 5px 5px;
+        color: #282e41;
+        border-radius: 5px;
+        &:hover {
+          background-color: #f6d84a;
+          color: var(--mau-chu-dieuhuong);
+        }
+      }
+    }
+    .section-body {
+      height: 186px;
+      width: 100%;
+      .section-item {
+        height: 100%;
+
+        .section-img {
+          width: 97%;
+          height: 156px;
+          border-radius: 2px;
+          &:hover {
+            cursor: pointer;
+            color: var(--mau-bc-16);
+          }
+        }
+        .section-title {
+          margin: 0;
+          padding: 5px 0px;
+          font-weight: 400;
+          &:hover {
+            cursor: pointer;
+            color: var(--mau-bc-16);
+          }
+        }
+      }
+    }
+  }
+}

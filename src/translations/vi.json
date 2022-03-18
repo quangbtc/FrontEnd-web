@@ -1,0 +1,117 @@
+{
+  "homeHeader": {
+    "specialty": "Chuyên khoa",
+    "searchDoctor": "Tìm bác sĩ theo chuyên khoa",
+    "healthFacility": "Cở sở y tế",
+    "chooseHospital": "Chọn bênh viện phòng khám",
+    "doctor": "Bác sĩ",
+    "chooseDoctor": "Chọn bác sĩ giỏi",
+    "examinationPackage": "Gói khám bệnh",
+    "generalExamination": "Khám sức khoẻ tổng quát",
+    "support": "Hỗ trợ",
+    "welcome": "Xin chào, "
+  },
+  "headerBanner": {
+    "medicalBackground": "NỀN TẢNG Y TẾ",
+    "healthCare": "CHĂM SÓC SỨC KHOẺ TOÀN DIỆN",
+    "findSpecialty": "Tìm chuyên khoa khám bệnh",
+    "specialtyExamination": "Khám chuyên khoa",
+    "remoteExamination": "Khám từ xa",
+    "generalExamination": "Khám tổng quát",
+    "medicalTest": "Kiểm tra y tế",
+    "healthyMind": "Sức khoẻ tinh thần",
+    "dentalExamination": "Khám nha sĩ",
+    "surgeryPackage": "Gói phẫu thuật",
+    "medicalProduct": "Sản phẩm y tế"
+  },
+  "user-redux": {
+    "add-new": "Thêm người dùng",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "address": "Địa chỉ",
+    "firstName": "Tên",
+    "lastName": "Họ",
+    "phone-number": "Số điện thoại",
+    "gender": "Gới tính",
+    "role": "Vai trò",
+    "position": "Chức vụ",
+    "image": "Thêm hình ảnh",
+    "placeholder-password": "Nhập mật khẩu",
+    "placeholder-email": "Nhập email",
+    "placeholder-firstName": "Nhập tên",
+    "placeholder-lastName": "Nhập họ",
+    "placeholder-address": "Nhập điạ chỉ",
+    "placeholder-phoneNumber": "Nhập số điện thoại",
+    "placeholder-file": "Chọn ảnh",
+    "submit": "Lưu người dùng",
+    "save-change": "Lưu thay đổi"
+  },
+  "homePage": {
+    "outstanding-doctor": "Bác sĩ nổi bật",
+    "more-info": "Xem thêm"
+  },
+  "common": {
+    "add": "Thêm",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "decentralize": "Phân quyền",
+    "close": "Đóng",
+    "save": "Lưu",
+    "refresh": "Refresh",
+    "accept": "Chấp nhận",
+    "confirm": "Xác nhận",
+    "confirm-this-task": "Bạn có chắc chắn thực hiện tác vụ này?",
+    "fail-to-load-data": "Không thể tải về dữ liệu",
+    "unknown-error": "Có lỗi xảy ra",
+    "internal-server-error": "Lỗi kết nối",
+    "bad-request": "Yêu cầu không hợp lệ",
+    "forbiden-request": "Thông tin truyền vào không hợp lệ",
+    "fail-to-load-all-code": "Không thể tải về dữ liệu allcode",
+    "sum": "Tổng",
+    "date-range-invalid": "Khoảng thời gian không hợp lệ"
+  },
+  "login": {
+    "login": "Đăng nhập",
+    "username": "Tên đăng nhập",
+    "password": "Mật khẩu",
+    "userpass-wrong": "Sai tên đăng nhập hoặc mật khẩu!"
+  },
+  "menu": {
+    "system": {
+      "header": "Quản lý người dùng",
+      "system-administrator": {
+        "user-redux": "Quản user redux",
+        "register-package-group-or-account": "Đăng ký gói dịch vụ cho nhóm/tài khoản"
+      },
+      "system-parameter": {
+        "header": "Tham số hệ thống"
+      }
+    },
+    "admin": {
+      "manage-user": "Người dùng",
+      "manage-admin": "Quản lý admin",
+      "manage-doctor": "Quản lý bác sĩ",
+      "crud": "List User",
+      "crud-redux": "List user Redux",
+      "clinics": "Phòng khám",
+      "manage-clinics": "Quản lý phòng khám",
+      "specialty": "Chuyên khoa",
+      "manage-specialty": "Quản lý chuyên khoa",
+      "handbook": "Cẩm nang",
+      "manage-handbook": "Quản lý cẩm nang",
+      "schedule-doctor": "Quản lý kế hoạch bác sĩ"
+    },
+    "doctor": {
+      "user-doctor": "Bác sĩ",
+      "manage-schedule": "Quản lý lịch khám bệnh"
+    }
+  },
+  "patient": {
+    "schedule-doctor": {
+      "calendar": "Lịch khám",
+      "no-schedule": "Bác sĩ chưa có lịch hẹn vào thời gian này. Vui lòng chọn thời gian khác.",
+      "book": "Chọn ",
+      "book-free": " và đặt (Miễn phí)"
+    }
+  }
+}

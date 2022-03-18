@@ -1,0 +1,50 @@
+.manage-specialty-container {
+  margin: 10px 10px;
+  .specialty-wrapper {
+    margin: 15px -10px;
+    .specialty-label {
+      margin: 10px auto;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .preview-avatar {
+      position: relative;
+      width: fit-content;
+      margin: 10px 0px;
+      .icon-close {
+        position: absolute;
+        top: 0;
+        left: 100px;
+      }
+    }
+  }
+  .specialty-title {
+    margin: 10px auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(29, 29, 248);
+  }
+  .specialty-markdown {
+  }
+  .btn-save-specialty {
+    float: right;
+    margin: 10px 0px;
+
+    button {
+      outline: none;
+      border: none;
+      background-color: #2073efe0;
+      border-radius: 3px;
+      padding: 5px 50px;
+      font-size: 16px;
+      box-shadow: 1px 1px 3px 0px;
+      margin-bottom: 20px;
+      &:hover {
+        color: white;
+        opacity: 0.9;
+      }
+    }
+  }
+}

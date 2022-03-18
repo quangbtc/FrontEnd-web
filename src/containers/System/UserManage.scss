@@ -1,0 +1,73 @@
+body {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #customers td,
+  #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  #customers tr:hover {
+    background-color: #ddd;
+  }
+
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+  }
+  .btn-edit {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: orange;
+    font-size: 20px;
+    &:hover {
+      background-color: transparent;
+      color: orange;
+      filter: brightness(0.5);
+    }
+  }
+  .btn-delete {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: rgb(233, 10, 10);
+    font-size: 20px;
+    &:hover {
+      background-color: transparent;
+      color: rgb(233, 10, 1);
+      filter: brightness(0.5);
+    }
+  }
+  .modal-user-container {
+    .modal-header {
+      button {
+        color: red;
+        background: transparent;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        &:hover {
+          filter: brightness(0.5);
+        }
+      }
+    }
+  }
+}

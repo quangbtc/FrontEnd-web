@@ -1,0 +1,30 @@
+.specialty-container {
+  margin: 20px auto;
+  .introduce-specialty {
+    padding: 10px 140px;
+    background-color: #f1f1f1;
+
+    .specialty-name {
+      font-size: 20px;
+      font-weight: 600;
+      padding: 0px 10px;
+    }
+    .specialty-description {
+      padding: 10px 0px;
+      //   height: 130px;
+      //   overflow: hidden;
+    }
+    .view-more {
+      button {
+        outline: none;
+        border: none;
+        color: #093ea0;
+        margin: 10px 0px;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  //
+}

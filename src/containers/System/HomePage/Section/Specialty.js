@@ -4,6 +4,7 @@ import Slider from "react-slick";
 
 import "./Specialty.scss";
 import { getAllSpecialtyService } from "../../../../services/specialtyService";
+import { withRouter } from "react-router";
 class Specialty extends Component {
   constructor(props) {
     super(props);
@@ -20,6 +21,10 @@ class Specialty extends Component {
       });
     }
   }
+  handleClickDetailSpecialty = (item) => {
+    console.log("check item",item)
+    this.props.history.push(`/detail-specialty/${item.id}`);
+  };
 
   render() {
     let { specialtyData } = this.state;
@@ -36,7 +41,9 @@ class Specialty extends Component {
                 specialtyData.length > 0 &&
                 specialtyData.map((item, index) => {
                   return (
-                    <div className="section-item">
+                    <div className="section-item"
+                    onClick={()=>this.handleClickDetailSpecialty(item)}
+                    >
                       <img className="section-img" src={item.image} alt="" />
                       <p className="section-title">{item.specialtyName}</p>
                     </div>
@@ -60,4 +67,4 @@ const mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Specialty);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Specialty));

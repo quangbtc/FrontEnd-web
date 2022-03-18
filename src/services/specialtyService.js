@@ -5,7 +5,11 @@ const createSpecialtyService=(data)=>{
 const getAllSpecialtyService=()=>{
     return axios.get("/api/get-all-specialty")
 }
+const getSpecialtyByIdService=(data)=>{
+    return axios.get(`/api/get-specialty-by-id?id=${data.id}&location=${data.location}`)
+}
 export {
     createSpecialtyService,
-    getAllSpecialtyService
+    getAllSpecialtyService,
+    getSpecialtyByIdService
 }

@@ -27,11 +27,12 @@ class section extends Component {
     }
   }
   handleClickDetailDoctor = (doctor) => {
-    console.log("Doctor info", doctor);
+    
     this.props.history.push(`/detail-doctor/${doctor.id}`);
   };
   render() {
     let doctors = this.state.doctorsArr;
+    let {language}=this.props
     return (
       <div className="section-container section-container-outstanding-doctor">
         <div className="section-content">
@@ -69,11 +70,11 @@ class section extends Component {
                         style={{ backgroundImage: `url(${imageBase64})` }}
                       ></div>
                       <p className="section-title">
-                        {this.props.language === LANGUAGES.VI
+                        {language === LANGUAGES.VI
                           ? titleVi
                           : titleEn}
                       </p>
-                      <p className="section-department">Sức khoẻ tâm thần</p>
+                      <p className="section-department">{language===LANGUAGES.VI?item.positionData.valueVi:item.positionData.valueEn}</p>
                     </div>
                   );
                 })}

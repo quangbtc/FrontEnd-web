@@ -23,6 +23,15 @@ class DoctorSchedule extends Component {
     console.log("Date Vi", moment(new Date()).format("dddd-DD/MM"));
     console.log("Date en", moment(new Date()).locale("en").format("ddd-DD/MM"));
     let allDays = this.setAllDays(language);
+    if(this.props.detailDoctor){
+      let response = await getDoctorScheduleService(
+        this.props.detailDoctor, //ID DOCTOR GỬI TỪ COMPONENT CHA
+        allDays[0].value
+      );
+      this.setState({
+        scheduleDoctor: response.data ? response.data : [],
+      });
+    }
     this.setState({
       arrDays: allDays,
     });

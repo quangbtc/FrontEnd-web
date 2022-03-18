@@ -8,6 +8,8 @@ import _ from "lodash";
 import moment from "moment";
 import localization from "moment/locale/vi"; //HỖ TRỢ CHUYỂN DATE SANG TIẾNG VIỆT
 import NumberFormat from "react-number-format";
+import { Link } from 'react-router-dom';
+
 class ProfileDoctor extends Component {
   constructor(props) {
     super(props);
@@ -61,9 +63,10 @@ class ProfileDoctor extends Component {
       return <></>;
     }
   };
+
   render() {
     let { dataProfile } = this.state;
-    let { isShowDescriptionDoctor, dataTime } = this.props;
+    let { isShowDescriptionDoctor, dataTime,isShowPrice ,isShowLink,doctorId} = this.props;
 
     let titleVi = "",
       titleEn = "";
@@ -107,17 +110,23 @@ class ProfileDoctor extends Component {
             </div>
           </div>
         </div>
-        <div className="price">
-          Giá khám :
-          <NumberFormat
-            value={price ? price : ""}
-            className="foo"
-            displayType={"text"}
-            thousandSeparator={true}
-            suffix={this.props.language === LANGUAGES.VI ? "đ " : "$"}
-            // renderText={(value, props) => <div {...props}>{value}</div>}
-          />{" "}
-        </div>
+        {isShowLink===true && <div className="show-link">
+          <Link to={`/detail-doctor/${doctorId}`}>Xem thêm</Link>
+          </div>}
+        {isShowPrice===true &&
+         <div className="price">
+         Giá khám :
+         <NumberFormat
+           value={price ? price : ""}
+           className="foo"
+           displayType={"text"}
+           thousandSeparator={true}
+           suffix={this.props.language === LANGUAGES.VI ? "đ " : "$"}
+           // renderText={(value, props) => <div {...props}>{value}</div>}
+         />{" "}
+       </div>
+        }
+       
       </>
     );
   }

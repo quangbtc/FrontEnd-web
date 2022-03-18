@@ -2,20 +2,27 @@
   display: flex;
   margin: 10px auto;
   .avatar-container {
-    flex: 30%;
     border: 50%;
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 10px;
-    min-height: 135px;
-    max-width: 135px;
+    height: 135px;
+    width: 135px;
   }
   .info-container {
+    flex: 1;
     .doctor-title {
     }
     .doctor-description {
     }
+  }
+}
+
+.show-link {
+  a {
+    text-decoration: none;
+    padding: 10px 30px;
   }
 }

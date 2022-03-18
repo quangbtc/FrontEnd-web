@@ -179,6 +179,8 @@ class ModalBooking extends Component {
                   doctorId={doctorId}
                   isShowDescriptionDoctor={false}
                   dataTime={dataScheduleTime}
+                  isShowPrice={true}
+                  isShowLink={false}
                 />
               </div>
 

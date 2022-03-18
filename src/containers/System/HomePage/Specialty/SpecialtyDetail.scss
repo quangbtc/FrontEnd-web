@@ -1,5 +1,6 @@
 .specialty-container {
   margin: 20px auto;
+
   .introduce-specialty {
     padding: 10px 140px;
     background-color: #f1f1f1;
@@ -27,4 +28,31 @@
     }
   }
   //
+  .info-doctor-container {
+    margin: 10px auto;
+    background-color: #eee;
+    padding: 10px;
+    .location-doctor {
+      margin-left: 130px;
+      .location-selected {
+        margin: 10px 0px;
+        padding: 8px 5px;
+        min-width: 150px;
+        outline: none;
+        color: #4dd088;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+    .info-doctor {
+      background-color: white;
+      margin: 10px 130px;
+      padding: 10px;
+      border-radius: 3px;
+    }
+    .doctor-schedule {
+      border-left: 1px solid blue;
+    }
+  }
 }

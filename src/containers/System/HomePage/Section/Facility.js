@@ -2,11 +2,34 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import Slider from "react-slick";
 import "./Facility.scss";
-import pic1 from "../../../../assets/images/specialty/benh-vien.jpg";
-import pic2 from "../../../../assets/images/specialty/phong-kham.jpg";
+import { getAllClinicService } from "../../../../services/clinicService";
+import { withRouter } from "react-router";
 
 class section extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      clinicData: [],
+    };
+  }
+
+  async componentDidMount() {
+    let resClinic = await getAllClinicService();
+    if (resClinic && resClinic.errCode === 0) {
+      let clinicData = resClinic.data;
+      this.setState({
+        clinicData,
+      });
+    }
+  }
+
+  handleClickDetailClinic = (item) => {
+    this.props.history.push(`/detail-clinic/${item.id}`);
+  };
+
   render() {
+    console.log("Check state clinic data", this.state);
+    let { clinicData } = this.state;
     return (
       <div className="section-container section-container-facility">
         <div className="section-content">
@@ -16,30 +39,20 @@ class section extends Component {
           </div>
           <div className="section-body">
             <Slider {...this.props.settings}>
-              <div className="section-item">
-                <img className="section-img" src={pic1} alt="" />
-                <p className="section-title">Bệnh viện chợ rẫy</p>
-              </div>
-              <div className="section-item">
-                <img className="section-img" src={pic2} alt="" />
-                <p className="section-title">Bênh viện Việt đức</p>
-              </div>
-              <div className="section-item">
-                <img className="section-img" src={pic1} alt="" />
-                <p className="section-title">Phòng khám trung ương</p>
-              </div>
-              <div className="section-item">
-                <img className="section-img" src={pic2} alt="" />
-                <p className="section-title">Phòng khám Y Đức</p>
-              </div>
-              <div className="section-item">
-                <img className="section-img" src={pic2} alt="" />
-                <p className="section-title">Phòng khám quân y</p>
-              </div>
-              <div className="section-item">
-                <img className="section-img" src={pic1} alt="" />
-                <p className="section-title">Trung tâm phòng bệnh</p>
-              </div>
+              {clinicData &&
+                clinicData.length > 0 &&
+                clinicData.map((item, index) => {
+                  return (
+                    <div
+                      className="section-item"
+                      key={index}
+                      onClick={() => this.handleClickDetailClinic(item)}
+                    >
+                      <img className="section-img" src={item.image} alt="" />
+                      <p className="section-title">{item.clinicName}</p>
+                    </div>
+                  );
+                })}
             </Slider>
           </div>
         </div>
@@ -58,4 +71,6 @@ const mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(section);
+export default withRouter(
+  connect(mapStateToProps, mapDispatchToProps)(section)
+);
